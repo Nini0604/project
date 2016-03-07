@@ -1,0 +1,47 @@
+table {
+  margin: 0 auto;
+  border-spacing: 0px;
+  text-align: center;
+  font-weight:bold;
+}
+
+td {
+  width: 120px;
+  height: 120px;
+}
+
+a {
+  text-decoration: none;
+}
+
+td.gray_blank a {
+  color: #fff;
+}
+
+td a {
+  color: #dadada;
+}
+
+
+
+img {
+  display: block;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+img.flower , img.cloud {
+  width: 100%;
+  height: 200%;
+}
+
+.board {
+  margin-top: 200px;
+}
+
+.gray_blank {
+  background-color: #dadada;
+}
