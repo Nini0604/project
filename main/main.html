@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Main</title>
+  <meta charset="utf-8">
+  <link type="text/css" rel="stylesheet" href="../normalize.css">
+  <link type="text/css" rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="board">
+  <table>
+    <tbody>
+      <tr>
+        <td rowspan="2"></td>
+        <td></td>
+        <td class="grayBar blueHover"><a href="">PANTS</a></td>
+        <td>
+          <img src="../images/flower2.gif">
+        </td>
+        <td rowspan="2" colspan="2">
+          <img class="cloud" src="../images/cloud.gif">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="../images/flower1.gif">
+        </td>
+        <td></td>
+        <td class="whiteBar"><a href="" id="hereLink">HERE</a></td>
+      </tr>
+      <tr>
+        <td rowspan="2" colspan="2">
+          <img class="flower" src="../images/flower.jpeg">
+        </td>
+        <td class="grayBar pinkHover"><a href="">TOP</a></td>
+        <td></td>
+        <td>
+          <img src="../images/draw.gif">
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td class="whiteBar blueHover">
+          <a href="">OUTER</a>
+        </td>
+        <td></td>
+        <td class="grayBar pinkHover"><a href="">ETC</a></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td class="whiteBar purpleHover"><a href="">DRESS</a></td>
+        <td>
+          <img src="../images/cookie.gif">
+        </td>
+        <td></td>
+        <td>
+          <img src="../images/d.gif">
+        </td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+  <script type = "text/javascript" src="../jquery-2.2.0.min.js"></script>
+
+  <script>
+  $(document).ready(function() {
+    var speed = 2000;
+    var colors=["#ffbadd","#b0d8fe","#dbb9fd"];
+
+    function flash(index){
+      if (index >= colors.length) {
+        index = 0;
+      }
+
+      console.log("dd");
+      console.log($("#hereLink"));
+      $("#hereLink").css("color",colors[index]);
+      setTimeout(function() {
+        flash(index + 1);
+      }, speed);
+      // setInterval(flash, speed);
+    }
+
+    flash(0);
+  });
+
+  //class로 css
+
+  // $(document).ready(function()
+  // {
+  //     $(".flower").hover(
+  //         function()
+  //         {
+  //           var src = $(this).attr("src");
+  //           $(this).attr("src", src.replace(/\.png$/i, ".gif"));
+  //         },
+  //         function()
+  //         {
+  //           var src = $(this).attr("src");
+  //           $(this).attr("src", src.replace(/\.gif$/i, ".png"));
+  //         });
+  // });
+</script>
+</body>
+</html>
