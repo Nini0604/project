@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JOIN</title>
+  <meta charset="utf-8">
+  <link type="text/css" rel="stylesheet" href="../css/normalize.css">
+  <link type="text/css" rel="stylesheet" href="../css/catagory.css">
+  <link type="text/css" rel="stylesheet" href="../css/join.css">
+</head>
+<body>
+  <div class="bodyContainer">
+    <div class="sideContainer">
+      <img class="logo" src="../images/logo.png">
+      <ul class="catagory">
+        <li><a href="">OUTER</a></li>
+        <li><a href="top.html">TOP</a></li>
+        <li><a href="">PANTS</a></li>
+        <li><a href="">DRESS</a></li>
+        <li><a href="">ETC</a></li>
+      </ul>
+    </div>
+    <div class="mainContainer">
+      <div class="topContainer">
+        <ul class="topLinkBox">
+          <li><a href="login.html">LOGIN</a></li>
+          <li class="selected"><a href="join.html">JOIN</a></li>
+          <li><a href="">CART</a></li>
+          <li><a href="">ORDER</a></li>
+        </ul>
+      </div>
+      <div class="joinContainer">
+        <div class="joinTitBox">
+          <span class="joinTit">MEMBER JOIN</span>
+        </div>
+        <div class="joinBox">
+          <form id="join" onsubmit="return false;">
+            <table>
+              <tr>
+                <td class="inputCatagory">이름</td>
+                <td><input type="text" name="userName" id="userName" required="required"></td>
+              </tr>
+              <tr>
+                <td class="inputCatagory">아이디</td>
+                <td><input type="text" name="userId" id="userId" required="required"></td>
+              </tr>
+              <tr>
+                <td class="inputCatagory">비밀번호</td>
+                <td><input type="password" name="password" id="password" required="required"></td>
+              </tr>
+              <tr>
+                <td class="inputCatagory">비밀번호 확인</td>
+                <td><input type="password" name="repassword" id="repassword" required="required"></td>
+              </tr>
+            </table>
+            <div class="buttonArea">
+              <input type="submit" value="가입완료" id="joinButton">
+              <span class="backButton">
+                <a href="">돌아가기</a>
+              </span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type = "text/javascript" src="../javascript/jquery-2.2.0.min.js"></script>
+  <script type = "text/javascript" src="../javascript/jquery.validate.min.js"></script>
+  <script type = "text/javascript" src="../javascript/join.js"></script>
+</body>
+</html>
