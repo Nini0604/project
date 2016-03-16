@@ -19,7 +19,7 @@ $(function(){
         minlength : 2
       }
     },
-    //규칙체크 실패시 출력될 메시지
+
     messages : {
       userId: {
         required : "필수 정보입니다.",
@@ -49,7 +49,6 @@ $(function(){
       console.log(index);
       var user = JSON.parse(index);
       document.cookie = userId+"="+index;
-      //form.submit();
     }
   });
 });
