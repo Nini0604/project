@@ -13,7 +13,7 @@ var server = http.createServer(function(request, response){
   function destinate(dest){
     var index = fs.readFileSync(dest);
     var ext = path.extname(dest);
-    if(ext ==".jpg" || ext ==".gif" || ext ==".png"){
+    if(ext ==".jpeg" || ext ==".gif" || ext ==".png"){
       response.writeHead(200, {'Content-Type': 'image/gif' });
       response.end(index, 'binary');
     }else if(ext==".ico"){
