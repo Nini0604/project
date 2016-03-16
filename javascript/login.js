@@ -10,12 +10,17 @@ $(function(){
     },
     messages : {
       id:{
-        required : true
+        required : "필수 정보입니다."
       },
       password:{
-        required: true
+        required: "필수 정보입니다."
       }
     },
+
+    errorPlacement: function(error, element) {
+    element.attr("placeholder", error.text());
+    },
+
     submitHandler: function(){
       var inputId= $("#id").val();
       var inputPwd= $("#password").val();

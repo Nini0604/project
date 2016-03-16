@@ -1,19 +1,3 @@
-// $( "#join" ).submit(function( event ) {
-//   var userName= $("#userName").val();
-//   var userId= $("#userId").val();
-//   var userpwd = $("#password").val();
-//
-// //VALIDATE 함수로 따로 빼기
-//   // if(($("#password").val() !== $("#repassword").val())){
-//   //   alert("비밀번호가 서로 일치하지 않습니다!");
-//   // } else{
-//     var index='{"userId":"'+userId+'","userName":"'+userName+'","userpwd":"'+userpwd+'"}';
-//     console.log(index);
-//     var user = JSON.parse(index);
-//     document.cookie = userId+"="+index;
-//   // }
-// });
-
 $(function(){
   $("#join").validate({
     rules: {
