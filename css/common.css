@@ -73,3 +73,17 @@ img.logo{
   float: left;
   padding-right: 10px;
 }
+
+.contentContainer {
+  width: 700px;
+  margin: 100px auto;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.titleCont {
+  border: 3px double #dadada;
+  padding: 10px 20px;
+  font-size: 15px;
+  letter-spacing: 4px;
+}

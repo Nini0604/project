@@ -18,7 +18,7 @@ $(function(){
     },
 
     errorPlacement: function(error, element) {
-    element.attr("placeholder", error.text());
+      element.attr("placeholder", error.text());
     },
 
     submitHandler: function(){

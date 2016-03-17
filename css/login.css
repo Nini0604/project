@@ -1,17 +1,3 @@
-.loginContainer {
-  width: 700px;
-  margin: 100px auto;
-  text-align: center;
-  letter-spacing: 2px;
-}
-
-.loginTit {
-  border: 3px double #dadada;
-  padding: 10px 20px;
-  font-size: 15px;
-  letter-spacing: 4px;
-}
-
 .loginBox {
   display: inline-block;
   margin: 80px 0px;
@@ -22,7 +8,6 @@
   float: left;
   border-right: 1px solid #e5e5e5;
 }
-
 
 .loginAlt {
   width: 300px;

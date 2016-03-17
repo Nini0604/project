@@ -1,21 +1,4 @@
-.joinContainer {
-  width: 700px;
-  margin: 100px auto;
-  letter-spacing: 2px;
-}
-
-.joinTitBox {
-  text-align: center;
-}
-
-.joinTit {
-  border: 3px double #dadada;
-  padding: 10px 20px;
-  font-size: 15px;
-  letter-spacing: 4px;
-}
-
-.joinBox {
+.joinInput {
   margin: 80px auto;
 }
 
@@ -42,7 +25,7 @@ tr {
   margin: 60px auto;
 }
 
-input{
+input {
   letter-spacing: 2px;
 }
 
