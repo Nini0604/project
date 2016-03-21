@@ -24,10 +24,13 @@ $(function(){
     submitHandler: function(){
       var inputId= $("#id").val();
       var inputPwd= $("#password").val();
-      var canLogin = userList(inputId, inputPwd);
+      var canLoginId = selectId(inputId, inputPwd);
 
-      if(canLogin){
+      if(canLoginId !== null){
         alert("로그인 성공");
+        console.log(canLoginId);
+        document.cookie = 'isLogined={"userId":"'+canLoginId.userId+'","userName":"'+canLoginId.userName+'","userpwd":"'+canLoginId.userpwd+'"}';
+        history.back();
       } else{
         alert("ID 또는 비밀번호가 틀립니다!");
       }
@@ -35,15 +38,16 @@ $(function(){
   });
 });
 
-function userList(inputId, inputPwd){
+function selectId(inputId, inputPwd){
+  console.log("ddd");
   var userCookieList = (document.cookie).split(';');
   var userList = [];
   for (var i = 0; i < userCookieList.length; i++) {
     userList.push(JSON.parse(userCookieList[i].substring(userCookieList[i].indexOf('{'),userCookieList[i].length)));
     if(userList[i].userId == inputId && userList[i].userpwd == inputPwd){
-      return true;
+      return userList[i];
     } else{
-      return false;
+      return userList[i];
     }
   }
 }

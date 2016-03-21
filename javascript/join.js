@@ -49,6 +49,7 @@ $(function(){
       console.log(index);
       var user = JSON.parse(index);
       document.cookie = userId+"="+index;
+      history.back();
     }
   });
 });
