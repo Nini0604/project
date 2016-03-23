@@ -25,22 +25,27 @@ tr {
   margin: 60px auto;
 }
 
+td input {
+  float: left;
+  margin-left: 40px;
+}
+
 input {
   letter-spacing: 2px;
 }
 
 input[type=submit] {
-    width: 100px;
-    height: 40px;
-    background:#fff;
-    border: 2px solid #333;
-    text-align: center;
+  width: 100px;
+  height: 40px;
+  border: 2px solid #333;
+  background:#fff;
+  text-align: center;
 }
 
 .backButton a{
+  float: right;
   width: 70px;
   height: 10px;
-  float:  right;
   padding: 9px 9px 17px 17px;
   border: 2px solid #333;
 }
@@ -51,6 +56,6 @@ input[type=submit]:hover , .backButton a:hover{
 }
 
 form label.error {
+  margin-left: -70px;
   color: #f4625d;
-  margin-left: 10px;
 }

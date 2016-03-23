@@ -4,18 +4,18 @@
 }
 
 .loginInput {
-  width: 350px;
   float: left;
+  width: 350px;
   border-right: 1px solid #e5e5e5;
 }
 
 .loginAlt {
-  width: 300px;
-  padding: 0px 20px;
-  margin-top: -5px;
   float: right;
-  text-align:left;
+  width: 300px;
+  margin-top: -5px;
+  padding: 0px 20px;
   font-size: 12px;
+  text-align:left;
 }
 
 input{
@@ -27,16 +27,16 @@ input{
 
 input[type=submit] {
   height: 50px;
-  background:#fff;
   margin-top: 35px;
   border: 2px solid #333;
+  background:#fff;
 }
 
 .joinButton ,.lostIdButton{
   width: 90%;
-  margin: 0px auto 20px auto;
+  margin: 0px auto 20px;
+  padding: 10px 0;
   border: 1px solid #333;
-  padding: 10px 0px;
   text-align: center;
 }
 

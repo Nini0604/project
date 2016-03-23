@@ -11,7 +11,6 @@ $(document).ready(function() {
     setTimeout(function() {
       flash(index + 1);
     }, speed);
-    // setInterval(flash, speed);
   }
 
   flash(0);

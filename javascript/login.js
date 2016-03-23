@@ -25,10 +25,8 @@ $(function(){
       var inputId= $("#id").val();
       var inputPwd= $("#password").val();
       var canLoginId = selectId(inputId, inputPwd);
-
       if(canLoginId !== null){
         alert("로그인 성공");
-        console.log(canLoginId);
         document.cookie = 'isLogined={"userId":"'+canLoginId.userId+'","userName":"'+canLoginId.userName+'","userpwd":"'+canLoginId.userpwd+'"}';
         history.back();
       } else{
@@ -39,15 +37,17 @@ $(function(){
 });
 
 function selectId(inputId, inputPwd){
-  console.log("ddd");
   var userCookieList = (document.cookie).split(';');
   var userList = [];
   for (var i = 0; i < userCookieList.length; i++) {
-    userList.push(JSON.parse(userCookieList[i].substring(userCookieList[i].indexOf('{'),userCookieList[i].length)));
-    if(userList[i].userId == inputId && userList[i].userpwd == inputPwd){
-      return userList[i];
+    if(userCookieList[i].indexOf('{') !== -1){
+      userList.push(JSON.parse(userCookieList[i].substring(userCookieList[i].indexOf('{'),userCookieList[i].length)));
+      console.log(userList);
+      if(userList[i].userId == inputId && userList[i].userpwd == inputPwd){
+        return userList[i];
+      }
     } else{
-      return userList[i];
+      return null;
     }
   }
 }

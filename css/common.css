@@ -8,14 +8,14 @@ ul {
 }
 
 a {
-  color: #333;
-  text-decoration:  none;
+  display: block;
   width: 100%;
   height: 100%;
-  display: block;
+  color: #333;
+  text-decoration:  none;
 }
 
-ul li:hover{
+ul li:hover ,.selected{
   text-decoration: underline;
   text-decoration-color: #dadada;
 }
@@ -27,12 +27,12 @@ ul li:hover{
 }
 
 .sideContainer{
+  float: left;
   position: fixed;
   width: 150px;
   height: 100vh;
-  float: left;
-  text-align: center;
   border-right: 2px solid #dadada;
+  text-align: center;
 }
 
 img.logo{
@@ -40,12 +40,10 @@ img.logo{
   height: 110px;
 }
 
-
 .catagory {
   width: 85%;
   margin: 0 auto;
-  padding-left: 0px;
-  padding-bottom: 25px;
+  padding: 0 0 25px;
   border-bottom: 1px solid #dadada;
 }
 
@@ -82,8 +80,8 @@ img.logo{
 }
 
 .titleCont {
-  border: 3px double #dadada;
   padding: 10px 20px;
+  border: 3px double #dadada;
   font-size: 15px;
   letter-spacing: 4px;
 }
