@@ -14,7 +14,7 @@ var server = http.createServer(function(request, response){
     var index = fs.readFileSync(dest);
     var ext = path.extname(dest);
     if(ext ==".jpeg" || ext ==".gif" || ext ==".png" || ext == ".jpg"){
-      response.writeHead(200, {'Content-Type': 'image/gif' });
+      response.writeHead(200, {'Content-Type': 'images/gif' });
       response.end(index, 'binary');
     }else if(ext==".ico"){
       response.end();

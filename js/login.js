@@ -27,8 +27,8 @@ $(function(){
       var canLoginId = selectId(inputId, inputPwd);
       if(canLoginId !== null){
         alert("로그인 성공");
-        document.cookie = 'isLogined={"userId":"'+canLoginId.userId+'","userName":"'+canLoginId.userName+'","userpwd":"'+canLoginId.userpwd+'"}';
-        history.back();
+        document.cookie = "isLogined="+JSON.stringify(canLoginId);
+      history.back();
       } else{
         alert("ID 또는 비밀번호가 틀립니다!");
       }
@@ -42,7 +42,6 @@ function selectId(inputId, inputPwd){
   for (var i = 0; i < userCookieList.length; i++) {
     if(userCookieList[i].indexOf('{') !== -1){
       userList.push(JSON.parse(userCookieList[i].substring(userCookieList[i].indexOf('{'),userCookieList[i].length)));
-      console.log(userList);
       if(userList[i].userId == inputId && userList[i].userpwd == inputPwd){
         return userList[i];
       }

@@ -1,3 +1,15 @@
 .contentContainer {
+  height: 80%;
   margin: 60px auto;
+  border: 1px solid black;
+}
+
+.productContainer {
+  height: 300px;
+  border: 1px solid black;
+}
+
+.mainPrdImg {
+  width: 300px;
+  height: 300px;
 }
