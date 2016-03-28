@@ -10,7 +10,9 @@
 <body>
   <div class="bodyContainer">
     <div class="sideContainer">
-      <img class="logo" src="../image/logo.png">
+      <a class="logoHref" href="main.html">
+        <img class="logo" src="../image/logo.png">
+      </a>
       <ul class="catagory">
         <li><a href="outer.html">OUTER</a></li>
         <li><a href="top.html">TOP</a></li>
@@ -25,23 +27,38 @@
           <li class="welcome"></li>
           <li id="login"><a href="login.html">LOGIN</a></li>
           <li id="join"><a href="join.html">JOIN</a></li>
-          <li><a href="">CART</a></li>
+          <li><a href="cart.html">CART</a></li>
           <li><a href="">ORDER</a></li>
         </ul>
       </div>
       <div class="contentContainer">
         <div class="productContainer">
-          <div class="prd-info">
-            <img class="mainPrdImg" src=""></img>
-
-          </div>
-          <div class="prd-detail">
+            <img id="mainPrdImg" class="mainPrdImg" src=""></img>
+            <div>
+              <div class="prd-info">
+                <p id="prd-name" class="prd-name"></p>
+                <p id="prd-desc" class="prd-desc"></p>
+              </div>
+              <div class="prd-pay-info">
+                <table>
+                  <tr>
+                    <td class="priceCatagory">가격</td>
+                    <td id="prd-price" class="prd-price"></td>
+                  </tr>
+                  <tr>
+                    <td class="pay"><p class="payButton">BUY IT NOW</p></td>
+                    <td class="cart"><p class="cartButton" onclick="addProduct()">ADD TO CART</p></td>
+                  </tr>
+                </table>
+              </div>
           </div>
         </div>
+        <img id="detailPrdImg" class="detailPrdImg"></img>
       </div>
     </div>
   </div>
   <script type = "text/javascript" src="../js/jquery-2.2.2.min.js"></script>
   <script type = "text/javascript" src="../js/common.js"></script>
+  <script type = "text/javascript" src="../js/product.js"></script>
 </body>
 </html>

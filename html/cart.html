@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>LOGIN</title>
+  <title>JOIN</title>
   <meta charset="utf-8">
   <link type="text/css" rel="stylesheet" href="../css/normalize.css">
   <link type="text/css" rel="stylesheet" href="../css/common.css">
-  <link type="text/css" rel="stylesheet" href="../css/login.css">
+  <link type="text/css" rel="stylesheet" href="../css/cart.css">
 </head>
 <body>
   <div class="bodyContainer">
@@ -24,38 +24,36 @@
     <div class="mainContainer">
       <div class="topContainer">
         <ul class="topLinkBox">
-          <li class="selected"><a href="login.html">LOGIN</a></li>
+          <li><a href="login.html">LOGIN</a></li>
           <li><a href="join.html">JOIN</a></li>
-          <li><a href="cart.html">CART</a></li>
+          <li class="selected"><a href="cart.html">CART</a></li>
           <li><a href="">ORDER</a></li>
         </ul>
       </div>
       <div class="contentContainer">
-        <span class="titleCont">MEMBER LOGIN</span>
-        <div class="loginBox">
-          <div class="loginInput">
-            <form id="login" onsubmit="return false;">
-              <input type="text" id="id" placeholder="아이디">
-              <input type="password" name="password" id="password" placeholder="비밀번호">
-              <input type="submit" value="LOGIN">
-            </form>
+        <span class="titleCont">CART</span>
+        <div class="cartBox">
+          <div id="shoppingList"> </div>
+          <table id="cartTable">
+            <tr id="cart-catagory" class="cart-catagory">
+              <td>이미지</td>
+              <td>상품정보</td>
+              <td>판매가</td>
+              <td>수량</td>
+            </tr>
+          </table>
+          <div class="payment">
+            <h3>
+              <span>총 합계:</span>
+              <span id="sum">0원</span>
+            </h3>
+            <div class="buyButton" onclick="pay()">상품주문</div>
           </div>
-        <div class="loginAlt">
-          <p>- 아직 회원이 아니신가요?</p>
-          <p class="joinButton">
-            <a href="join.html">JOIN</a>
-          </p>
-          <p>- 아이디 또는 비밀번호를 잊어버렸나요?</p>
-          <p class="lostIdButton">
-            <a href="join.html">ID/PW SEARCH</a>
-          </p>
-        </div>
-        </div>
       </div>
     </div>
   </div>
   <script type = "text/javascript" src="../js/jquery-2.2.2.min.js"></script>
   <script type = "text/javascript" src="../js/jquery.validate.min.js"></script>
-  <script type = "text/javascript" src="../js/login.js"></script>
+  <script type = "text/javascript" src="../js/cart.js"></script>
 </body>
 </html>

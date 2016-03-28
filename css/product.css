@@ -1,15 +1,60 @@
 .contentContainer {
   height: 80%;
   margin: 60px auto;
-  border: 1px solid black;
 }
 
 .productContainer {
-  height: 300px;
-  border: 1px solid black;
+  width: 700px;
+  height: 350px;
+  padding: 50px 0px;
+  border-top: 1px solid #dadada;
+  border-bottom: 1px solid #dadada;
 }
 
 .mainPrdImg {
+  float: left;
   width: 300px;
-  height: 300px;
+  height: 350px;
+}
+
+.prd-info{
+  float: right;
+  width: 350px;
+  padding: 25px 0px;
+  border-bottom: 1px solid #dadada;
+  border-top: 1px solid #dadada;
+}
+
+.prd-pay-info {
+  width: 300px;
+  float: right;
+  padding: 30px 0px;
+}
+
+table{
+  width: 250px;
+}
+
+.priceCatagory {
+  width: 50%;
+}
+
+.cart, .pay{
+  padding-top: 70px;
+}
+
+.cartButton, .payButton{
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px 0px;
+  border: 2px solid #333;
+}
+
+.cartButton:hover, .payButton:hover{
+  color: #fff;
+  background-color: #333;
+}
+
+.detailPrdImg {
+  width: 100%;
 }

@@ -39,7 +39,7 @@ img {
   height: 100%;
 }
 
-img.flower , img.cloud {
+img.flowerImg , img.cloudImg {
   width: 100%;
   height: 200%;
 }
@@ -71,4 +71,32 @@ img.flower , img.cloud {
 
 .pinkHover:hover {
   background-color: #ffbadd;
+}
+
+img.flowerImg:hover {
+  content: url("../image/main/gif/flower.gif");
+}
+
+img.flower1Img:hover {
+  content: url("../image/main/gif/flower1.gif");
+}
+
+img.flower2Img:hover {
+  content: url("../image/main/gif/flower2.gif");
+}
+
+img.cloudImg:hover {
+  content: url("../image/main/gif/cloud.gif");
+}
+
+img.drawImg:hover {
+  content: url("../image/main/gif/draw.gif");
+}
+
+img.cookieImg:hover {
+  content: url("../image/main/gif/cookie.gif");
+}
+
+img.ballroonImg:hover{
+  content: url("../image/main/gif/ballroon.gif");
 }

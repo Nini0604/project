@@ -1,4 +1,3 @@
-
 function getLoginData() {
   var cookieData = document.cookie;
   var cookieArray = cookieData.split(";");
@@ -28,6 +27,22 @@ function logoutNav(){
   $("#login a").attr("href","login.html");
   $("#login a").text("LOGIN");
   $('#join').css("display","");
+}
+
+function selectProduct(productNum){
+  document.cookie = "productPage=";
+  var cookieData = document.cookie;
+  var cookieArray = cookieData.split(";");
+
+  for (var i = 0; i < cookieArray.length; i++) {
+    var isData = cookieArray[i].indexOf(productNum);
+    if(isData !== -1 ){
+      var productObj = JSON.parse(cookieArray[i].split("=")[1].trim());
+      var productIndex = JSON.stringify(productObj);
+      document.cookie = productNum+"="+productIndex;
+      document.cookie = "productPage="+productNum;
+    }
+  }
 }
 
 $(document).ready(function() {

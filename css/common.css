@@ -20,6 +20,10 @@ ul li:hover ,.selected{
   text-decoration-color: #dadada;
 }
 
+.logoHref {
+  height: 110px;
+}
+
 .bodyContainer {
   position: relative;
   width: 1000px;
