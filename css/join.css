@@ -1,62 +1,54 @@
-.joinInput {
-  margin: 80px auto;
-}
-
 table {
   width: 90%;
   margin: 0 auto;
   font-size: 12px;
   border-top: 2px solid #dadada;
-  border-bottom: 2px solid #dadada;
-}
+  border-bottom: 2px solid #dadada; }
 
 tr {
   height: 50px;
-  border-bottom: 1px solid #dadada;
-}
+  border-bottom: 1px solid #dadada; }
 
-.inputCatagory {
-  width: 20%;
-  padding-left: 20px;
-}
-
-.buttonArea {
-  width: 230px;
-  margin: 60px auto;
-}
-
-td input {
-  float: left;
-  margin-left: 40px;
-}
+td {
+  text-align: left; }
+  td input {
+    float: left;
+    margin: 0 20px 0 40px; }
 
 input {
-  letter-spacing: 2px;
-}
+  letter-spacing: 2px; }
 
 input[type=submit] {
   width: 100px;
   height: 40px;
   border: 2px solid #333;
-  background:#fff;
-  text-align: center;
-}
+  background: #fff;
+  font-size: 12px;
+  text-align: center; }
+  input[type=submit]:hover {
+    background-color: #333;
+    color: #fff; }
 
-.backButton a{
-  float: right;
-  width: 70px;
-  height: 10px;
-  padding: 9px 9px 17px 17px;
-  border: 2px solid #333;
-}
-
-input[type=submit]:hover , .backButton a:hover{
-  background-color: #333;
-  color:#fff;
-}
+.joinInput {
+  margin: 80px auto; }
+  .joinInput .inputCatagory {
+    width: 20%;
+    padding-left: 20px;
+    text-align: center; }
+  .joinInput .buttonArea {
+    width: 230px;
+    margin: 60px auto; }
+    .joinInput .buttonArea .backButton a {
+      float: right;
+      width: 70px;
+      height: 10px;
+      padding: 10px 12px 16px 13px;
+      border: 2px solid #333;
+      font-size: 12px; }
+      .joinInput .buttonArea .backButton a:hover {
+        background-color: #333;
+        color: #fff; }
 
 form label.error {
-  margin-left: -200px;
   color: #f4625d;
-  vertical-align: -webkit-baseline-middle;
-}
+  vertical-align: -webkit-baseline-middle; }

@@ -1,7 +1,7 @@
 $(function(){
   $("#login").validate({
     rules: {
-      id:{
+      userId:{
         required : true
       },
       password:{
@@ -9,7 +9,7 @@ $(function(){
       }
     },
     messages : {
-      id:{
+      userId:{
         required : "필수 정보입니다."
       },
       password:{
@@ -22,13 +22,12 @@ $(function(){
     },
 
     submitHandler: function(){
-      var inputId= $("#id").val();
+      var inputId= $("#userId").val();
       var inputPwd= $("#password").val();
       var canLoginId = selectId(inputId, inputPwd);
       if(canLoginId !== null){
         alert("로그인 성공");
         document.cookie = "isLogined="+JSON.stringify(canLoginId);
-      history.back();
       } else{
         alert("ID 또는 비밀번호가 틀립니다!");
       }

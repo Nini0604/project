@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+$url_0: url(../image/main/gif/flower.gif);
+$url_1: url(../image/main/gif/flower1.gif);
+$url_2: url(../image/main/gif/flower2.gif);
+$url_3: url(../image/main/gif/cloud.gif);
+$url_4: url(../image/main/gif/draw.gif);
+$url_5: url(../image/main/gif/cookie.gif);
+$url_6: url(../image/main/gif/ballroon.gif);
+
+$white: #fff;
+$gray: #dadada;
+
+table {
+  margin: 0 auto;
+  width: 720px;
+  table-layout: fixed;
+  border-collapse: separate;
+  border-spacing: 2px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+td {
+  height: 120px;
+
+  a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding-top: 50px;
+    color: $gray;
+
+    span {
+      vertical-align: middle;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+td.grayBar a {
+  color: $white;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  &.flowerImg {
+		height: 200%;
+
+		&:hover {
+			content: $url_0;
+		}
+	}
+
+	&.cloudImg {
+		height: 200%;
+
+		&:hover {
+			content: $url_3;
+		}
+	}
+
+  &.flower1Img:hover {
+    content: $url_1;
+  }
+
+  &.flower2Img:hover {
+    content: $url_2;
+  }
+
+  &.drawImg:hover {
+    content: $url_4;
+  }
+
+  &.cookieImg:hover {
+    content: $url_5
+  }
+
+  img.ballroonImg:hover{
+    content: $url_6;
+  }
+}
+
+.board {
+  margin: 150px 0px;
+
+  .grayBar {
+    cursor: pointer;
+    background-color: $gray;
+  }
+
+  .whiteBar {
+    cursor: pointer;
+
+    &:hover {
+      a{
+        color: $white;
+      }
+    }
+  }
+
+  .purpleHover:hover {
+    background-color: #dbb9fd;
+  }
+
+  .blueHover:hover {
+    background-color: #b0d8fe;
+  }
+
+  .pinkHover:hover {
+    background-color: #ffbadd;
+  }
+}

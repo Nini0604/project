@@ -1,52 +1,40 @@
-.cartBox {
-  margin: 70px 30px;
-  /*text-align: left;*/
-}
+body a {
+  display: inline; }
 
-.payment{
-  margin-top: 50px;
-  text-align: right;
-}
-table{
+table {
   width: 100%;
-}
+  font-size: 13px;
+  text-align: center; }
 
-tr{
+tr {
   border-top: 1px solid #dadada;
-  border-bottom: 1px solid #dadada;
-}
+  border-bottom: 1px solid #dadada; }
 
-.cart-catagory{
-  height: 50px;
-}
-
-.prd-name {
-  width: 50%;
-}
-
-.prd-price{
-  width: 20%;
-}
-
-.prd-quantity{
-  width: 10%;
-}
-
-.prd-desc {
-  width: 200px;
-  margin: 10px auto;
-  font-size: 12px;
-}
-
-.buyButton {
-  width: 20%;
-  padding: 10px 0px;
-  margin: 0 auto;
-  border: 2px solid #333;
-  text-align: center;
-}
-
-.buyButton:hover {
-  color: #fff;
-  background-color: #333;
-}
+.cartBox {
+  margin: 70px 30px; }
+  .cartBox .cart-catagory {
+    height: 50px; }
+    .cartBox .cart-catagory .imgCatagory {
+      width: 25%; }
+    .cartBox .cart-catagory .productCatagory {
+      width: 50%; }
+    .cartBox .cart-catagory .priceCatagory {
+      width: 15%; }
+    .cartBox .cart-catagory .prd-desc {
+      width: 200px;
+      margin: 10px auto;
+      font-size: 12px; }
+  .cartBox .payment {
+    margin-top: 50px;
+    text-align: right; }
+  .cartBox .buyButton {
+    width: 20%;
+    padding: 10px 0px;
+    margin: 0 auto;
+    border: 2px solid #333;
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer; }
+    .cartBox .buyButton:hover {
+      color: #fff;
+      background-color: #333; }

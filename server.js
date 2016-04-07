@@ -12,11 +12,11 @@ var server = http.createServer(function(request, response){
 
   function destinate(dest){
     var index = fs.readFileSync(dest);
-    var ext = path.extname(dest);
+    var ext = path.extname(dest); //확장명 get
     if(ext ==".jpeg" || ext ==".gif" || ext ==".png" || ext == ".jpg"){
-      response.writeHead(200, {'Content-Type': 'images/gif' });
+      //response.writeHead(200, {'Content-Type': 'images/gif' });
       response.end(index, 'binary');
-    }else if(ext==".ico"){
+    }else if(ext == ".ico"){
       response.end();
     }else{
       response.write(index.toString());

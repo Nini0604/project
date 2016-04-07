@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+@mixin buttonStyle{
+  width: 90%;
+  margin: 0px auto 20px;
+  padding: 10px 0;
+  border: 1px solid #333;
+  text-align: center;
+}
+
+@mixin buttonHover {
+  border: 1px solid #fff;
+  background-color: #333;
+  color: #fff;
+}
+
+input{
+  width: 280px;
+  height: 30px;
+  margin-bottom: 3px;
+  letter-spacing: 2px;
+}
+
+input[type=submit] {
+  height: 50px;
+  margin-top: 35px;
+  border: 2px solid #333;
+  background:#fff;
+
+  &:hover {
+    @include buttonHover;
+  }
+}
+
+.loginBox {
+  display: inline-block;
+  margin: 80px 0px;
+
+  .loginInput {
+    float: left;
+    width: 350px;
+    border-right: 1px solid #e5e5e5;
+  }
+}
+
+.loginAlt {
+  float: right;
+  width: 300px;
+  margin-top: -5px;
+  padding: 0px 20px;
+  font-size: 12px;
+  text-align:left;
+
+  .joinButton {
+    @include buttonStyle;
+
+    &:hover {
+      @include buttonHover;
+    }
+  }
+
+  .lostIdButton{
+    @include buttonStyle;
+
+    &:hover {
+      @include buttonHover;
+    }
+  }
+}

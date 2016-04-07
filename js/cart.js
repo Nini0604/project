@@ -40,7 +40,6 @@ function addProductPrice(totalPrice){
   $("#sum").text(totalPrice +"원");
 }
 
-
 function pay(){
   alert(price+" 결제완료되었습니다.");
 }

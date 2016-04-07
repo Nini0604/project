@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+$borderLine: 1px solid #dadada;
+
+@mixin buttonStyle {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px 0px;
+  border: 2px solid #333;
+  cursor: pointer;
+}
+
+@mixin buttonHover {
+  color: #fff;
+  background-color: #333;
+}
+
+table{
+  width: 250px;
+}
+
+.contentContainer {
+  height: 80%;
+  margin: 60px auto;
+
+  .productContainer {
+    width: 700px;
+    height: 350px;
+    padding: 50px 0px;
+    border-top: $borderLine;
+    border-bottom: $borderLine;
+
+    .mainPrdImg {
+      float: left;
+      width: 300px;
+      height: 350px;
+    }
+
+      .prd-info{
+        float: right;
+        width: 350px;
+        padding: 25px 0px;
+        border-bottom: $borderLine;
+        border-top: $borderLine;
+      }
+
+      .prd-pay-info {
+        width: 300px;
+        float: right;
+        padding: 30px 0px;
+
+        .priceCatagory {
+          width: 50%;
+        }
+
+        .cart {
+          padding-top: 70px;
+
+          .cartButton {
+            @include buttonStyle;
+
+            &:hover {
+              @include buttonHover;
+            }
+          }
+        }
+
+        .pay{
+          padding-top: 70px;
+
+          .payButton{
+            @include buttonStyle;
+
+            &:hover {
+              @include buttonHover;
+            }
+          }
+        }
+      }
+    }
+    .detailPrdImg {
+      width: 100%;
+    }
+  }
