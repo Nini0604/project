@@ -19,8 +19,10 @@ function showCartList(){
       console.log(productList[i].desc);
       $("#"+productList[i].name).append("<td class=prd-price>"+productList[i].price+"</td>");
       $("#"+productList[i].name).append("<td class=prd-quantity>"+productList[i].quantity+"</td>");
+      console.log(productList[i].total);
+      price += productList[i].total;
+      console.log(price);
     }
-    price += productList[i].total;
   }
   addProductPrice(price);
 }
