@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.mypage-content {
+  display: inline-block;
+  width: 100%;
+
+  .mypage-top {
+    padding: 40px;
+
+    .close_btn {
+      width: 60px;
+    }
+
+    .mypage-txt {
+      float: right;
+      font-size: 50px;
+    }
+  }
+
+  .tab-area {
+    margin: 40px;
+
+    input, label {
+      width: 33%;
+      height: 60px;
+    }
+
+    input {
+      position: absolute;
+      cursor: pointer;
+      opacity: 0;
+    }
+
+    label {
+      display: inline-block;
+      font-size: 40px;
+      text-align: center;
+
+      span {
+        padding-bottom: 10px;
+      }
+    }
+  }
+
+  .tab-content {
+    border-top: 5px solid #333;
+
+    section {
+      display: none;
+
+      .content {
+        margin: 100px 50px;
+        font-size: 30px;
+          /*tab1*/
+          .myInfoTit {
+          width: 150px;
+          padding: 12px 15px;
+          border: 1px solid #333;
+          text-align: center;
+          }
+
+          .myInfoList {
+          width: 100%;
+          margin: 40px 0 70px;;
+          text-align: center;
+
+          td {
+            height: 60px;
+          }
+
+          .labelLine {
+            width: 90%;
+            margin: 0 auto;
+            padding-bottom: 10px;
+            border-bottom: 1px solid black;
+          }
+
+          .orderNum {
+            width: 20%;
+          }
+
+          .orderName {
+            width: 80%;
+          }
+        }
+        /*tab2*/
+
+        .noti {
+          width: 100%;
+          height: 100%;
+          margin-bottom: 60px;
+          line-height: 1.5;
+          font-size: 35px;
+        }
+
+        .consultButton {
+          @extend .myInfoTit;
+          float: right;
+          margin-right: 20px;
+        }
+
+        .consultList {
+          width: 100%;
+          margin: 200px 0;
+          line-height: 1.5;
+          border-collapse: collapse;
+
+          td {
+            padding: 5px 0;
+          }
+
+          .answerMark {
+            width: 10%;
+            font-size: 60px;
+            font-weight: 900;
+            vertical-align: top;;
+          }
+
+          .questionMark {
+            @extend .answerMark;
+            border-bottom: 1px solid #333;
+          }
+
+          .questionDetail , .answerDetail {
+            color: gray;
+          }
+
+          .questionDetail {
+            border-bottom: 1px solid #333;
+
+            .catagory{
+              width: 25%;
+            }
+
+            .questionTime{
+              width: 65%;
+            }
+          }
+
+          .blank {
+            height: 50px;
+          }
+        }
+      }
+    }
+  }
+}
+
+#tab-1:checked ~ .tab-content #tab-item-1  {
+    display: block;
+}
+
+#tab-2:checked ~ .tab-content #tab-item-2  {
+    display: block;
+}
+
+#tab-3:checked ~ .tab-content #tab-item-3  {
+    display: block;
+}
+
+#tab-1:checked ~ .tab-1-txt span {
+    border-bottom: 10px solid #333;
+}
+
+#tab-2:checked ~ .tab-2-txt span{
+    border-bottom: 10px solid #333;
+}
+
+#tab-3:checked ~ .tab-3-txt span{
+    border-bottom: 10px solid #333;
+}
