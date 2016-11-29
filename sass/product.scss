@@ -15,16 +15,11 @@ $borderLine: 1px solid #dadada;
   background-color: #333;
 }
 
-table{
-  width: 250px;
-}
-
 .contentContainer {
   height: 80%;
   margin: 60px auto;
 
   .productContainer {
-    width: 700px;
     height: 350px;
     padding: 50px 0px;
     border-top: $borderLine;
@@ -32,22 +27,27 @@ table{
 
     .mainPrdImg {
       float: left;
-      width: 300px;
+      width: 260px;
       height: 350px;
     }
 
       .prd-info{
         float: right;
-        width: 350px;
+        width: 540px;
         padding: 25px 0px;
         border-bottom: $borderLine;
         border-top: $borderLine;
       }
 
       .prd-pay-info {
-        width: 300px;
+        width: 550px;
         float: right;
         padding: 30px 0px;
+
+        table {
+          width: 250px;
+          margin: 0 auto;
+        }
 
         .priceCatagory {
           width: 50%;

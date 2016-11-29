@@ -1,29 +1,28 @@
-table {
-  width: 250px; }
-
 .contentContainer {
   height: 80%;
   margin: 60px auto; }
   .contentContainer .productContainer {
-    width: 700px;
     height: 350px;
     padding: 50px 0px;
     border-top: 1px solid #dadada;
     border-bottom: 1px solid #dadada; }
     .contentContainer .productContainer .mainPrdImg {
       float: left;
-      width: 300px;
+      width: 260px;
       height: 350px; }
     .contentContainer .productContainer .prd-info {
       float: right;
-      width: 350px;
+      width: 540px;
       padding: 25px 0px;
       border-bottom: 1px solid #dadada;
       border-top: 1px solid #dadada; }
     .contentContainer .productContainer .prd-pay-info {
-      width: 300px;
+      width: 550px;
       float: right;
       padding: 30px 0px; }
+      .contentContainer .productContainer .prd-pay-info table {
+        width: 250px;
+        margin: 0 auto; }
       .contentContainer .productContainer .prd-pay-info .priceCatagory {
         width: 50%; }
       .contentContainer .productContainer .prd-pay-info .cart {
@@ -50,3 +49,5 @@ table {
             background-color: #333; }
   .contentContainer .detailPrdImg {
     width: 100%; }
+
+/*# sourceMappingURL=product.css.map */

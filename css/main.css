@@ -22,44 +22,46 @@ td {
 a {
   text-decoration: none; }
 
-td.grayBar a {
+td.background-gray a {
   color: #fff; }
 
 img {
   display: block;
   width: 100%;
   height: 100%; }
-  img.flowerImg {
+  img.flower-img-1{
     height: 200%; }
-    img.flowerImg:hover {
+    img.flower-img:hover {
       content: url(../image/main/gif/flower.gif); }
-  img.cloudImg {
+  img.cloud-img {
     height: 200%; }
-    img.cloudImg:hover {
+    img.cloud-img:hover {
       content: url(../image/main/gif/cloud.gif); }
-  img.flower1Img:hover {
+  img.flower-img-2:hover {
     content: url(../image/main/gif/flower1.gif); }
-  img.flower2Img:hover {
+  img.flower-img-3:hover {
     content: url(../image/main/gif/flower2.gif); }
-  img.drawImg:hover {
+  img.draw-img:hover {
     content: url(../image/main/gif/draw.gif); }
-  img.cookieImg:hover {
+  img.cookie-img:hover {
     content: url(../image/main/gif/cookie.gif); }
-  img img.ballroonImg:hover {
+  img img.ballroon-img:hover {
     content: url(../image/main/gif/ballroon.gif); }
 
 .board {
   margin: 150px 0px; }
-  .board .grayBar {
+  .board .background-gray {
     cursor: pointer;
     background-color: #dadada; }
-  .board .whiteBar {
+  .board .background-white {
     cursor: pointer; }
-    .board .whiteBar:hover a {
+    .board .background-white:hover a {
       color: #fff; }
-  .board .purpleHover:hover {
+  .board .background-purple:hover {
     background-color: #dbb9fd; }
-  .board .blueHover:hover {
+  .board .background-blue:hover {
     background-color: #b0d8fe; }
-  .board .pinkHover:hover {
+  .board .background-pink:hover {
     background-color: #ffbadd; }
+
+/*# sourceMappingURL=main.css.map */

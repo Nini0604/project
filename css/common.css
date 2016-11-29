@@ -3,11 +3,6 @@ body {
   color: #333; }
   body ul {
     list-style-type: none; }
-  body li {
-    padding: 10px 0px; }
-    body li:hover {
-      text-decoration: underline;
-      text-decoration-color: #dadada; }
   body a {
     display: block;
     width: 100%;
@@ -16,48 +11,57 @@ body {
     text-decoration: none; }
   body .bodyContainer {
     position: relative;
-    width: 1000px;
+    width: 100%;
     margin: 0 auto; }
     body .bodyContainer .sideContainer {
+      width: 150px;
+      height: 100%;
       float: left;
       position: fixed;
-      width: 150px;
-      height: 100vh;
       border-right: 2px solid #dadada;
-      text-align: center; }
+      background-color: #fff;
+      text-align: center;
+      z-index: 10; }
       body .bodyContainer .sideContainer .logoHref {
         height: 110px; }
         body .bodyContainer .sideContainer .logoHref img.logo {
           width: 110px;
           height: 110px; }
       body .bodyContainer .sideContainer .catagory {
-        width: 85%;
-        margin: 0 auto;
-        padding: 0 0 25px;
-        border-bottom: 1px solid #dadada; }
+        padding: 15px 0; }
+        body .bodyContainer .sideContainer .catagory li {
+          padding: 10px 0; }
         body .bodyContainer .sideContainer .catagory .selected {
-          text-decoration: underline;
-          text-decoration-color: #dadada; }
+          color: #dadada; }
     body .bodyContainer .mainContainer {
-      width: 800px;
-      height: 100vh;
+      width: 100%;
+      height: 100%;
+      padding-left: 150px;
       float: right;
-      padding: 35px; }
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -ms-box-sizing: border-box; }
       body .bodyContainer .mainContainer .topContainer {
-        height: 100px;
+        height: 85px;
+        padding: 20px 2%;
         border-bottom: 2px solid #dadada; }
         body .bodyContainer .mainContainer .topContainer .topLinkBox {
-          float: right; }
+          float: right;
+          padding: 20px 1%; }
           body .bodyContainer .mainContainer .topContainer .topLinkBox li {
             float: left;
-            padding-right: 10px; }
+            padding-left: 20px; }
       body .bodyContainer .mainContainer .contentContainer {
-        width: 700px;
-        margin: 100px auto;
+        width: 845px;
+        margin: 5% auto;
         text-align: center;
         letter-spacing: 2px; }
         body .bodyContainer .mainContainer .contentContainer .titleCont {
-          padding: 10px 20px;
+          width: 120px;
+          margin: 0 auto;
+          padding: 10px;
           border: 3px double #dadada;
           font-size: 15px;
           letter-spacing: 4px; }
+
+/*# sourceMappingURL=common.css.map */

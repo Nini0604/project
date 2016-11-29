@@ -42,7 +42,7 @@ a {
   text-decoration: none;
 }
 
-td.grayBar a {
+td.background-gray a {
   color: $white;
 }
 
@@ -51,7 +51,7 @@ img {
   width: 100%;
   height: 100%;
 
-  &.flowerImg {
+  &.flower-img-1{
 		height: 200%;
 
 		&:hover {
@@ -59,7 +59,7 @@ img {
 		}
 	}
 
-	&.cloudImg {
+	&.cloud-img {
 		height: 200%;
 
 		&:hover {
@@ -67,23 +67,23 @@ img {
 		}
 	}
 
-  &.flower1Img:hover {
+  &.flower-img-2:hover {
     content: $url_1;
   }
 
-  &.flower2Img:hover {
+  &.flower-img-3:hover {
     content: $url_2;
   }
 
-  &.drawImg:hover {
+  &.draw-img:hover {
     content: $url_4;
   }
 
-  &.cookieImg:hover {
+  &.cookie-img:hover {
     content: $url_5
   }
 
-  img.ballroonImg:hover{
+  img.ballroon-img:hover{
     content: $url_6;
   }
 }
@@ -91,12 +91,12 @@ img {
 .board {
   margin: 150px 0px;
 
-  .grayBar {
+  .background-gray {
     cursor: pointer;
     background-color: $gray;
   }
 
-  .whiteBar {
+  .background-white {
     cursor: pointer;
 
     &:hover {
@@ -106,15 +106,15 @@ img {
     }
   }
 
-  .purpleHover:hover {
+  .background-purple:hover {
     background-color: #dbb9fd;
   }
 
-  .blueHover:hover {
+  .background-blue:hover {
     background-color: #b0d8fe;
   }
 
-  .pinkHover:hover {
+  .background-pink:hover {
     background-color: #ffbadd;
   }
 }
