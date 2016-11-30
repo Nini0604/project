@@ -36,15 +36,15 @@ var product18 = { name: "스냅청_ops", price: 10000, quantity: 0, total: 0, de
 var product19 = { name: "보호본능유발_ops", price: 10000, quantity: 0, total: 0, desc:"이름처럼, 입는 순간 청순가련한 매력으로 보호본능 제대로 자극하면서~! 반전뒷태로 매력지수 +100", src: "../image/dress/dress4.jpg", detailImg:"../image/dress/dress4_01.jpg"};
 var product20 = { name: "쌓인베게위로_ops", price: 10000, quantity: 0, total: 0, desc:"트위드 소재로 고급스러움 듬~뿍! 미니한 기장감의 여성스러운 원피스♥", src: "../image/dress/dress5.jpg", detailImg:"../image/dress/dress5_01.jpg"};
 
-var productList = [product01, product02, product03, product04, product05,
+var products = [product01, product02, product03, product04, product05,
                    product06, product07, product08, product09, product10,
                    product11, product12, product13, product14, product15,
                    product16, product17, product18, product19, product20];
 
-for (var i = 0; i < productList.length; i++) {
+for (var i = 0; i < products.length; i++) {
   if (i < 9) {
-    document.cookie = "product"+("0"+(i+1))+"="+JSON.stringify(productList[i]);
+    document.cookie = "product"+("0"+(i+1))+"="+JSON.stringify(products[i]);
   } else{
-    document.cookie = "product"+(i+1)+"="+JSON.stringify(productList[i]);
+    document.cookie = "product"+(i+1)+"="+JSON.stringify(products[i]);
   }
 }

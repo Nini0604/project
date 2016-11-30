@@ -6,7 +6,7 @@ window.onload = showCartList;
 
 function showCartList(){
   var productStrList = (document.cookie).split(';');
-  productList = [];
+    productList = [];
   for (var i = 0; i < productStrList.length; i++) {
     productList.push(JSON.parse(productStrList[i].substring(productStrList[i].indexOf('{'),productStrList[i].length)));
 
@@ -23,6 +23,7 @@ function showCartList(){
       price += productList[i].total;
       console.log(price);
     }
+
   }
   addProductPrice(price);
 }

@@ -12,15 +12,15 @@ tr {
 
 .cartBox {
   margin: 70px 30px; }
-  .cartBox .cart-catagory {
+  .cartBox .cart-contents {
     height: 50px; }
-    .cartBox .cart-catagory .imgCatagory {
+    .cartBox .cart-contents .imgCatagory {
       width: 25%; }
-    .cartBox .cart-catagory .productCatagory {
+    .cartBox .cart-contents .productCatagory {
       width: 50%; }
-    .cartBox .cart-catagory .priceCatagory {
+    .cartBox .cart-contents .priceCatagory {
       width: 15%; }
-    .cartBox .cart-catagory .prd-desc {
+    .cartBox .cart-contents .prd-desc {
       width: 200px;
       margin: 10px auto;
       font-size: 12px; }

@@ -1,0 +1,36 @@
+/*
+Error: Invalid CSS after "  }": expected selector or at-rule, was "}"
+        on line 38 of product-list.scss
+
+33:         margin-top: 5px;
+34:         font-size: 13px;
+35:       }
+36:     }
+37:   }
+38: }
+
+Backtrace:
+product-list.scss:38
+/usr/local/var/rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1189:in `expected'
+/usr/local/var/rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1125:in `expected'
+/usr/local/var/rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:42:in `parse'
+/usr/local/var/rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/engine.rb:406:in `_to_tree'
+/usr/local/var/rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+/usr/local/var/rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
+/usr/local/var/rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/usr/local/var/rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/local/var/rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
+/usr/local/var/rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/local/var/rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
+/usr/local/var/rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:331:in `block in watch'
+/usr/local/var/rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/listen-2.8.0/lib/listen/listener.rb:282:in `call'
+/usr/local/var/rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/listen-2.8.0/lib/listen/listener.rb:282:in `_process_changes'
+/usr/local/var/rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/listen-2.8.0/lib/listen/listener.rb:246:in `block in _wait_for_changes'
+/usr/local/var/rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/listen-2.8.0/lib/listen/listener.rb:229:in `loop'
+/usr/local/var/rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/listen-2.8.0/lib/listen/listener.rb:229:in `_wait_for_changes'
+/usr/local/var/rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/listen-2.8.0/lib/listen/listener.rb:318:in `block in _start_wait_thread'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"  }\": expected selector or at-rule, was \"}\"\A         on line 38 of product-list.scss\A \A 33:         margin-top: 5px;\A 34:         font-size: 13px;\A 35:       }\A 36:     }\A 37:   }\A 38: }"; }

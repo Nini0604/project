@@ -15,17 +15,17 @@ $borderLine: 1px solid #dadada;
   background-color: #333;
 }
 
-.contentContainer {
+.content {
   height: 80%;
   margin: 60px auto;
 
-  .productContainer {
+  .prd-detail {
     height: 350px;
     padding: 50px 0px;
     border-top: $borderLine;
     border-bottom: $borderLine;
 
-    .mainPrdImg {
+    .prd-detail-img {
       float: left;
       width: 260px;
       height: 350px;

@@ -1,12 +1,12 @@
 @charset "UTF-8";
 
-  .prod-wrapper {
+  .prod-list {
     width: 100%;
     margin: 5% auto;
     text-align: left;
     border-top: 1px solid #dadada;
 
-    .prod-content {
+    .prod-wrapper {
       display: inline-block;
       margin: 5% 1%;
       color: #9f9b9b;
@@ -35,3 +35,4 @@
       }
     }
   }
+}

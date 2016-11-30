@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
   <title>CART</title>
@@ -8,34 +9,34 @@
   <link type="text/css" rel="stylesheet" href="../css/cart.css">
 </head>
 <body>
-  <div class="bodyContainer" id="container">
-    <div class="sideContainer">
-      <a class="logoHref" href="main.html">
-        <img class="logo" src="../image/logo.png">
+  <div class="wrap" id="container">
+    <div class="left-header">
+      <a class="main-logo" href="main.html">
+        <img class="logo-img" src="../image/logo.png">
       </a>
-      <ul class="catagory">
+      <ul class="left-menu">
         <li><a href="outer.html">OUTER</a></li>
         <li><a href="top.html">TOP</a></li>
         <li><a href="bottom.html">BOTTOM</a></li>
         <li><a href="dress.html">DRESS</a></li>
-        <li><a href="etc.html">ETC</a></li>
+        <li><a href="#">ETC</a></li>
       </ul>
     </div>
-    <div class="mainContainer">
-      <div class="topContainer">
-        <ul class="topLinkBox">
-          <li><a href="login.html">LOGIN</a></li>
-          <li><a href="join.html">JOIN</a></li>
-          <li class="selected"><a href="cart.html">CART</a></li>
-          <li><a href="">ORDER</a></li>
+    <div class="right-wrapper">
+      <div class="right-header">
+        <ul class="right-menu">
+          <li id="login"><a href="login.html">LOGIN</a></li>
+          <li id="join"><a href="join.html">JOIN</a></li>
+          <li><a href="cart.html" class="selected">CART</a></li>
+          <li><a href="#">ORDER</a></li>
         </ul>
       </div>
-      <div class="contentContainer">
-        <div class="titleCont">CART</div>
+      <div class="content">
+        <div class="content-title">CART</div>
         <div class="cartBox">
           <div id="shoppingList"> </div>
           <table id="cartTable">
-            <tr id="cart-catagory" class="cart-catagory">
+            <tr id="cart-contents" class="cart-contents">
               <td class="imgCatagory">이미지</td>
               <td class="productCatagory">상품정보</td>
               <td class="priceCatagory">판매가</td>
@@ -52,8 +53,9 @@
       </div>
     </div>
   </div>
+</div>
   <script type = "text/javascript" src="../js/jquery-2.2.2.min.js"></script>
-  <script type = "text/javascript" src="../js/jquery.validate.min.js"></script>
+  <script type = "text/javascript" src="../js/common.js"></script>
   <script type = "text/javascript" src="../js/cart.js"></script>
 </body>
 </html>

@@ -7,12 +7,11 @@ for (var i = 0; i < cookieArray.length; i++) {
   var isData = cookieArray[i].indexOf("product"+productNum);
 
   if(isData !== -1 ){
-    console.log(cookieArray[i]);
     var product = JSON.parse(cookieArray[i].split("=")[1].trim());
   }
 }
 
-$("#mainPrdImg").attr("src", product.src);
+$("#prd-detail-img").attr("src", product.src);
 $("#prd-name").text(product.name);
 $("#prd-desc").text(product.desc);
 $("#prd-price").text(product.price);
