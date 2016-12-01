@@ -19,19 +19,19 @@ $borderLine: 1px solid #dadada;
   height: 80%;
   margin: 60px auto;
 
-  .prd-detail {
+  .prod-detail {
     height: 350px;
     padding: 50px 0px;
     border-top: $borderLine;
     border-bottom: $borderLine;
 
-    .prd-detail-img {
+    .prod-detail-img {
       float: left;
       width: 260px;
       height: 350px;
     }
 
-      .prd-info{
+      .prod-info{
         float: right;
         width: 540px;
         padding: 25px 0px;
@@ -39,7 +39,7 @@ $borderLine: 1px solid #dadada;
         border-top: $borderLine;
       }
 
-      .prd-pay-info {
+      .prod-pay {
         width: 550px;
         float: right;
         padding: 30px 0px;
@@ -49,14 +49,14 @@ $borderLine: 1px solid #dadada;
           margin: 0 auto;
         }
 
-        .priceCatagory {
+        .price-catagory {
           width: 50%;
         }
 
         .cart {
           padding-top: 70px;
 
-          .cartButton {
+          .cart-btn {
             @include buttonStyle;
 
             &:hover {
@@ -68,7 +68,7 @@ $borderLine: 1px solid #dadada;
         .pay{
           padding-top: 70px;
 
-          .payButton{
+          .buy-btn{
             @include buttonStyle;
 
             &:hover {

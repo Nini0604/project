@@ -19,7 +19,7 @@
         <li><a href="top.html">TOP</a></li>
         <li><a href="bottom.html">BOTTOM</a></li>
         <li><a href="dress.html">DRESS</a></li>
-        <li><a href="#">ETC</a></li>
+        <li><a href="#" onclick="alert('Coming soon!')">ETC</a></li>
       </ul>
     </div>
     <div class="right-wrapper">
@@ -32,22 +32,26 @@
         </ul>
       </div>
       <div class="content">
-        <div class="prd-detail">
-            <img id="prd-detail-img" class="prd-detail-img">
+        <div class="prod-detail">
+            <img id="prod-detail-img" class="prod-detail-img">
             <div>
-              <div class="prd-info">
-                <p id="prd-name" class="prd-name"></p>
-                <p id="prd-desc" class="prd-desc"></p>
+              <div class="prod-info">
+                <p id="prod-name" class="prod-name"></p>
+                <p id="prod-desc" class="prod-desc"></p>
               </div>
-              <div class="prd-pay-info">
+              <div class="prod-pay">
                 <table>
                   <tr>
-                    <td class="priceCatagory">가격</td>
-                    <td id="prd-price" class="prd-price"></td>
+                    <td class="price-catagory">가격</td>
+                    <td id="prod-price" class="prod-price"></td>
                   </tr>
                   <tr>
-                    <td class="pay"><p class="payButton">BUY IT NOW</p></td>
-                    <td class="cart"><p class="cartButton" onclick="addProduct()">ADD TO CART</p></td>
+                    <td class="pay">
+                      <p class="buy-btn" onclick="buyProduct()">BUY IT NOW</p>
+                    </td>
+                    <td class="cart">
+                      <p class="cart-btn" onclick="addProduct()">ADD TO CART</p>
+                    </td>
                   </tr>
                 </table>
               </div>

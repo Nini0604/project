@@ -14,38 +14,38 @@ input[type=submit] {
     background-color: #333;
     color: #fff; }
 
-.loginBox {
+.login-content {
   display: inline-block;
   margin: 80px 0px; }
-  .loginBox .loginInput {
+  .login-content .login-input {
     float: left;
     width: 350px;
     border-right: 1px solid #e5e5e5; }
 
-.loginAlt {
+.login-alt {
   float: right;
   width: 300px;
   margin-top: -5px;
   padding: 0px 20px;
   font-size: 12px;
   text-align: left; }
-  .loginAlt .joinButton {
+  .login-alt .join-btn {
     width: 90%;
     margin: 0px auto 20px;
     padding: 10px 0;
     border: 1px solid #333;
     text-align: center; }
-    .loginAlt .joinButton:hover {
+    .login-alt .join-btn:hover {
       border: 1px solid #fff;
       background-color: #333;
       color: #fff; }
-  .loginAlt .lostIdButton {
+  .login-alt .lost-id-btn {
     width: 90%;
     margin: 0px auto 20px;
     padding: 10px 0;
     border: 1px solid #333;
     text-align: center; }
-    .loginAlt .lostIdButton:hover {
+    .login-alt .lost-id-btn:hover {
       border: 1px solid #fff;
       background-color: #333;
       color: #fff; }

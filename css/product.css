@@ -1,50 +1,50 @@
 .content {
   height: 80%;
   margin: 60px auto; }
-  .content .prd-detail {
+  .content .prod-detail {
     height: 350px;
     padding: 50px 0px;
     border-top: 1px solid #dadada;
     border-bottom: 1px solid #dadada; }
-    .content .prd-detail .prd-detail-img {
+    .content .prod-detail .prod-detail-img {
       float: left;
       width: 260px;
       height: 350px; }
-    .content .prd-detail .prd-info {
+    .content .prod-detail .prod-info {
       float: right;
       width: 540px;
       padding: 25px 0px;
       border-bottom: 1px solid #dadada;
       border-top: 1px solid #dadada; }
-    .content .prd-detail .prd-pay-info {
+    .content .prod-detail .prod-pay {
       width: 550px;
       float: right;
       padding: 30px 0px; }
-      .content .prd-detail .prd-pay-info table {
+      .content .prod-detail .prod-pay table {
         width: 250px;
         margin: 0 auto; }
-      .content .prd-detail .prd-pay-info .priceCatagory {
+      .content .prod-detail .prod-pay .price-catagory {
         width: 50%; }
-      .content .prd-detail .prd-pay-info .cart {
+      .content .prod-detail .prod-pay .cart {
         padding-top: 70px; }
-        .content .prd-detail .prd-pay-info .cart .cartButton {
+        .content .prod-detail .prod-pay .cart .cart-btn {
           width: 80%;
           margin: 0 auto;
           padding: 10px 0px;
           border: 2px solid #333;
           cursor: pointer; }
-          .content .prd-detail .prd-pay-info .cart .cartButton:hover {
+          .content .prod-detail .prod-pay .cart .cart-btn:hover {
             color: #fff;
             background-color: #333; }
-      .content .prd-detail .prd-pay-info .pay {
+      .content .prod-detail .prod-pay .pay {
         padding-top: 70px; }
-        .content .prd-detail .prd-pay-info .pay .payButton {
+        .content .prod-detail .prod-pay .pay .buy-btn {
           width: 80%;
           margin: 0 auto;
           padding: 10px 0px;
           border: 2px solid #333;
           cursor: pointer; }
-          .content .prd-detail .prd-pay-info .pay .payButton:hover {
+          .content .prod-detail .prod-pay .pay .buy-btn:hover {
             color: #fff;
             background-color: #333; }
   .content .detailPrdImg {

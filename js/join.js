@@ -1,5 +1,5 @@
 $(function(){
-  $("#join").validate({
+  $("#join-form").validate({
     rules: {
       userId: {
         required : true,
@@ -43,9 +43,9 @@ $(function(){
     submitHandler: function(form){
       var userName= $("#userName").val();
       var userId= $("#userId").val();
-      var userpwd = $("#password").val();
+      var userPwd = $("#password").val();
 
-      var index='{"userId":"'+userId+'","userName":"'+userName+'","userpwd":"'+userpwd+'"}';
+      var index='{"userId":"'+userId+'","userName":"'+userName+'","userPwd":"'+userPwd+'"}';
       console.log(index);
       var user = JSON.parse(index);
       document.cookie = userId+"="+index;

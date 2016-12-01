@@ -11,15 +11,20 @@ for (var i = 0; i < cookieArray.length; i++) {
   }
 }
 
-$("#prd-detail-img").attr("src", product.src);
-$("#prd-name").text(product.name);
-$("#prd-desc").text(product.desc);
-$("#prd-price").text(product.price);
+$("#prod-detail-img").attr("src", product.src);
+$("#prod-name").text(product.name);
+$("#prod-desc").text(product.desc);
+$("#prod-price").text(product.price);
 $("#detailPrdImg").attr("src", product.detailImg);
+
+function buyProduct(){
+  alert(product.price+"원 결제되었습니다.");
+}
 
 function addProduct(){
   product.quantity++;
   product.total = product.price * product.quantity;
   var productIndex = JSON.stringify(product);
   document.cookie = "product"+productNum+"="+productIndex;
+  location.href = "../html/cart.html";
 }

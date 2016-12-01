@@ -1,5 +1,5 @@
 $(function(){
-  $("#login").validate({
+  $("#login-form").validate({
     rules: {
       userId:{
         required : true
@@ -22,10 +22,11 @@ $(function(){
     },
 
     submitHandler: function(){
-      var inputId= $("#userId").val();
-      var inputPwd= $("#password").val();
+      var inputId = $("#userId").val();
+      var inputPwd = $("#password").val();
       var canLoginId = selectId(inputId, inputPwd);
-      if(canLoginId !== null){
+      console.log(canLoginId);
+      if(canLoginId !== null && canLoginId !== undefined){
         alert("로그인 성공");
         document.cookie = "isLogined="+JSON.stringify(canLoginId);
         location.href="../html/outer.html";
@@ -43,7 +44,7 @@ function selectId(inputId, inputPwd){
     console.log(userCookieList[i]);
     if(userCookieList[i].indexOf('{') !== -1){
       userList.push(JSON.parse(userCookieList[i].substring(userCookieList[i].indexOf('{'),userCookieList[i].length)));
-      if(userList[i].userId == inputId && userList[i].userpwd == inputPwd){
+      if(userList[i].userId == inputId && userList[i].userPwd == inputPwd){
         return userList[i];
       }
     } else{

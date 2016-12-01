@@ -19,7 +19,7 @@
         <li><a href="top.html">TOP</a></li>
         <li><a href="bottom.html">BOTTOM</a></li>
         <li><a href="dress.html">DRESS</a></li>
-        <li><a href="#">ETC</a></li>
+        <li><a href="#" onclick="alert('Coming soon!')">ETC</a></li>
       </ul>
     </div>
     <div class="right-wrapper">
@@ -33,29 +33,29 @@
       </div>
       <div class="content">
         <div class="content-title">MEMBER JOIN</div>
-        <div class="joinInput">
-          <form id="join" onsubmit="return false;">
+        <div class="join-content">
+          <form id="join-form" onsubmit="return false;">
             <table>
               <tr>
-                <td class="inputCatagory">이름</td>
+                <td class="join-catagory">이름</td>
                 <td><input type="text" name="userName" id="userName" required="required"></td>
               </tr>
               <tr>
-                <td class="inputCatagory">아이디</td>
+                <td class="join-catagory">아이디</td>
                 <td><input type="text" name="userId" id="userId" required="required"></td>
               </tr>
               <tr>
-                <td class="inputCatagory">비밀번호</td>
+                <td class="join-catagory">비밀번호</td>
                 <td><input type="password" name="password" id="password" required="required"></td>
               </tr>
               <tr>
-                <td class="inputCatagory">비밀번호 확인</td>
+                <td class="join-catagory">비밀번호 확인</td>
                 <td><input type="password" name="repassword" id="repassword" required="required"></td>
               </tr>
             </table>
-            <div class="buttonArea">
-              <input type="submit" value="가입완료" id="joinButton">
-              <span class="backButton">
+            <div class="join-btn-wrapper">
+              <input type="submit" value="가입완료" id="join-btn">
+              <span class="back-btn">
                 <a href="">돌아가기</a>
               </span>
             </div>
