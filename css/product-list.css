@@ -1,0 +1,24 @@
+.prod-wrapper {
+  width: 100%;
+  margin: 5% auto;
+  text-align: left;
+  border-top: 1px solid #dadada; }
+  .prod-wrapper .prod-content {
+    display: inline-block;
+    margin: 5% 1%;
+    color: #9f9b9b;
+    text-align: center; }
+    .prod-wrapper .prod-content a {
+      display: inline; }
+      .prod-wrapper .prod-content a:hover {
+        opacity: 0.4; }
+      .prod-wrapper .prod-content a .prod-img {
+        width: 260px;
+        height: 350px; }
+    .prod-wrapper .prod-content .prod-name {
+      margin-top: 5px; }
+    .prod-wrapper .prod-content .prod-price {
+      margin-top: 5px;
+      font-size: 13px; }
+
+/*# sourceMappingURL=product-list.css.map */
